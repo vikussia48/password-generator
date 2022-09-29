@@ -1,8 +1,3 @@
-// Random password generator
-
-// Additional features to add:
-// 1. Ability to set password length
-
 // Character array to use for the password
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S",
 "T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q",
@@ -39,8 +34,10 @@ function generatePassword() {
 
 passwordEl1.addEventListener("click", function() {
     navigator.clipboard.writeText(passwordEl1.textContent)
+    window.alert("Text copied")
 })
 
 passwordEl2.addEventListener("click", function() {
     navigator.clipboard.writeText(passwordEl2.textContent)
+    window.alert("Text copied")
 })
